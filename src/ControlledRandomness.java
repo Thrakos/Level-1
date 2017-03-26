@@ -23,6 +23,8 @@ public class ControlledRandomness implements ActionListener {
 	int getInputState = 1;
 	int currentState = displayState;
 	
+	int round = 0;
+	
 	Random rand = new Random();
 	int num = 0;
 	String numbers = "";
@@ -75,7 +77,7 @@ public class ControlledRandomness implements ActionListener {
 			lightButton(num);
 			currentState = getInputState;
 		}
-		}
+	}
 	
 	void lightButton(int i){
 		if (i == 0) {
